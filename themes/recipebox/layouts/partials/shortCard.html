@@ -12,7 +12,13 @@
         <div class="card-body">
             <h5 class="card-title"> {{ .Params.title }} </h5>
             <p class="card-text">{{.Params.summary}}</p>
-            <a href={{ .Permalink }} class="btn btn-primary">Detalhes</a>   
+            <div class="row">
+                <div class="col">
+                    <a href={{ .Permalink }} class="btn btn-light">{{.Site.Params.detailsCard}}</a> 
+                </div>
+                
+            </div>
+              
         </div>
     </div>
 </div>

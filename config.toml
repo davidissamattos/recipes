@@ -10,7 +10,9 @@ description = "Site de receitas do David"
 totalTime = "Tempo total"
 preparationTime = "Tempo de preparo"
 portions = "Porções"
+
 # footer = "my footer" # remove comment to add a footer to the web-page
+detailsCard = "Detalhes"
 
 # Names for the archetypes
 instructions = "Modo de preparo"
