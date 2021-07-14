@@ -1,0 +1,14 @@
+
+{{ define "main" }}
+<main>
+  <div class="container">
+    {{.Content}}
+    <div class="row">
+      {{ range .Site.RegularPages }}
+        {{ partial "shortCard.html" .}}
+      {{ end }}
+    </div>
+  </div>
+</main>
+
+{{ end }}

@@ -1,0 +1,24 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a href="/" class="nav-brand link-dark .left"> {{.Site.Title}} </a>
+
+<!-- Sandwich buttom, each folder there will be a category there -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+    <!-- Now we loop over the folder structure below recipes -->
+        {{ range .Site.Menus.main }}
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ .URL }}">{{.Title}}</a>
+        </li>
+        {{end}}  
+      </ul>
+    </div>
+    
+    
+  </div>  
+</nav>
+
+

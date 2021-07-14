@@ -1,0 +1,61 @@
+baseURL = "http://example.org/"
+languageCode = "pt-br"
+title = "Receitas David"
+theme = "recipebox"
+author = "David Issa Mattos"
+description = "Site de receitas do David"
+
+[params]
+# Names for the parameters of the recipes
+totalTime = "Tempo total"
+preparationTime = "Tempo de preparo"
+portions = "Porções"
+# footer = "my footer" # remove comment to add a footer to the web-page
+
+# Names for the archetypes
+instructions = "Modo de preparo"
+ingredients = "Ingredientes"
+notes = "Notas"
+
+#Configuring the menu
+# the url field is the name of the folder. Don't forget the /
+#title is the name it will appear in the menu
+#identifier should be unique. Use the same name as the folder
+#weight determines the order of the menu ascending
+
+[menu]
+    [[menu.main]]
+        identifier="salads"
+        title="Saladas e molhos"
+        url="/salads"
+        weight=1
+    [[menu.main]]
+        identifier="bread"
+        title="Massas e pães"
+        url="/bread"
+        weight=2
+    [[menu.main]]
+        identifier="brunch"
+        title="Brunch e fika"
+        url="/brunch"
+        weight=3
+    [[menu.main]]
+        identifier="roast"
+        title="Assados"
+        url="/roast"
+        weight=3
+    [[menu.main]]
+        title="Asiático"
+        identifier="asian"
+        url="/asian"
+        weight=4
+    [[menu.main]]
+        identifier="dessert"
+        title="Sobremesas"
+        url="/dessert"
+        weight=5
+    [[menu.main]]
+        identifier="other"
+        title="Outras"
+        url="/other"
+        weight=6

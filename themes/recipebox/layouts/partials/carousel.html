@@ -1,0 +1,40 @@
+{{if .Page.Params.images}}
+
+<div id="carousel" class="carousel slide py-4" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      {{range $index, $element := .Page.Params.images}}
+        {{if eq $index 0}}
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="{{$index}}" class="active" aria-current="true" aria-label=""></button>
+        {{else}}
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="{{$index}}" aria-current="true" aria-label=""></button>
+        {{end}}
+    {{end}}
+    </div>
+
+    <div class="carousel-inner" >
+    {{range $index, $element := .Page.Params.images}}
+        {{if eq $index 0}}
+            <div class="carousel-item active">
+                <img src="{{$element}}" class="d-block w-100" alt="">
+            </div>
+        {{else}}
+            <div class="carousel-item">
+                <img src="{{$element}}" class="d-block w-100" alt="">
+            </div>
+        {{end}}
+    {{end}}
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+  {{end}}

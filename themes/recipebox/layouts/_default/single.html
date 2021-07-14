@@ -1,0 +1,49 @@
+{{ define "main" }}
+<main>
+
+  <div class="container p-4">
+  <div class="card" id="print_with_figures">
+     <div class="card-header text-center">
+        <div class="row px-2">
+          <div class="col-11 align-self-center">
+            {{ .Params.mainCategory }}
+          </div>
+          <div class="col-1 align-self-end px-1">
+          <button type="button" class="btn btn-light" onclick="printDiv('print_no_figures')">
+            <i class="bi bi-printer"></i>
+          </button>
+        </div>
+    </div> 
+    </div>
+    
+    <!-- Card featured image -->
+    {{if .Page.Params.images}}
+    <figure class="figure">
+      <img src= "{{index (.Page.Params.images) 0}}"  class="card-img-top figure-img img-fluid" alt="">
+    </figure>
+    {{else}}
+    <!-- No image -->
+    {{end}}
+
+    <div id="print_no_figures">
+      <!-- Recipe title -->
+      <h1 class="card-title p-3 text-center">{{ .Title }}</h1>
+
+  
+      <div class="card-body">
+      
+      {{- partial "recipeProperties.html" . -}}
+
+      <!-- Markdown content -->
+            {{ .Content }}
+      </div>
+  </div>
+
+  <!-- Gallery of images -->
+  {{- partial "carousel.html" . -}}
+
+
+  </div>
+</div>
+</main>
+{{ end }}
