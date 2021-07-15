@@ -16,5 +16,7 @@ images: []
 * 1L de suco de limão ~ 10-15 limões 
 * 350g de acucar
 
-
 ## Modo de preparo
+
+1. Faz o suco de limão e coloca para ferver junto com o morango e o acucar
+2. 
