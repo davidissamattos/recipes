@@ -4,7 +4,7 @@ date: 2021-07-15T10:30:19+02:00
 preparationTime: "30 min"
 totalTime: "30 min"
 portions: "2 pratos grandes"
-mainCategory: "Salada"
+mainCategory: "Saladas"
 tags: ["romã", "grão-de-bico", "coentro"]
 summary: "Salada com romã, coentro e grão-de-bico"
 images: []
