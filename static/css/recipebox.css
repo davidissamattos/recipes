@@ -1,5 +1,5 @@
 a, u {
-    text-decoration: none !important;
+    text-decoration: none !important;   
 }
 
 .recipe-header {
@@ -7,10 +7,15 @@ a, u {
     border-bottom: 1px solid #e5e5e5;
   }
 
-.short-card card{
+.short-card-index card{
   width: 16rem; 
-  max-height: 24rem;
+  max-height: 16rem;
 
+}
+
+.carousel-image{
+  max-width: auto;
+  max-height: 500px;
 }
   
   h1, .h1, h2, .h2,  h3, .h3,  h4, .h4,  h5, .h5,  h6, .h6 {
@@ -26,19 +31,19 @@ a, u {
   }
   
   h3, .h3 {
-    font-size: 1.2rem;
-  }
-  
-  h4, .h4 {
-    font-size: 1.1rem;
-  }
-
-  h5, .h5 {
     font-size: 1.0rem;
   }
   
-  h6, .h6 {
+  h4, .h4 {
     font-size: 0.9rem;
+  }
+
+  h5, .h5 {
+    font-size: 0.8rem;
+  }
+  
+  h6, .h6 {
+    font-size: 0.7rem;
   }
 
   html,body{

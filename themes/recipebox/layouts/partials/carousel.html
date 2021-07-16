@@ -14,11 +14,11 @@
     <div class="carousel-inner" >
     {{range $index, $element := .Page.Params.images}}
         {{if eq $index 0}}
-            <div class="carousel-item active">
+            <div class="carousel-item active carousel-image">
                 <img src="{{$element}}" class="d-block w-100" alt="">
             </div>
         {{else}}
-            <div class="carousel-item">
+            <div class="carousel-item carousel-image">
                 <img src="{{$element}}" class="d-block w-100" alt="">
             </div>
         {{end}}
