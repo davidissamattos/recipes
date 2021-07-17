@@ -1,0 +1,55 @@
+   <!-- Card -->
+   <div class="card" id="print_with_figures">
+    <!-- Header of the card -->
+    <div class="card-header">
+        <div class="row px-2">
+          <div class="col-11 align-self-center">
+            {{ .Params.mainCategory }}
+          </div>
+          <div class="col-1 align-self-end px-1">
+            <button type="button" class="btn btn-light" onclick="printDiv('print_no_figures')">
+              <i class="bi bi-printer"></i>
+            </button>
+          </div>
+        </div> 
+      </div>
+    
+    
+    <!-- Card featured image -->
+    <!-- {{if .Page.Params.images}} -->
+    <!-- <figure class="figure"> -->
+      <!-- <img src= "{{index (.Page.Params.images) 0}}"  class="card-img-top figure-img img-fluid" alt=""> -->
+    <!-- </figure> -->
+    <!-- {{else}} -->
+    <!-- No image -->
+    <!-- {{end}} -->
+
+    <div id="print_no_figures">
+      <!-- Recipe title -->
+      <h1 class="card-title p-3 text-center">{{ .Title }}</h1>
+      
+      <div class="card-body">  
+      <!-- Properties -->
+        <div class="row p-3">
+          <div class="row">
+            {{.Site.Params.totalTime}}:  {{.Params.totalTime}}
+          </div>
+          <div class="row">
+            {{.Site.Params.preparationTime}}: {{.Params.preparationTime}}
+          </div>
+          <div class="row">
+            {{.Site.Params.portions}}: {{.Params.portions}}
+          </div>
+        </div>
+
+      <!-- Markdown content -->
+            {{ .Content }}
+
+      </div><!--End card body -->
+  </div><!--End printable area -->
+
+  <!-- Gallery of images - outside print area-->
+  {{- partial "carousel.html" . -}}
+
+
+  </div><!--End card -->

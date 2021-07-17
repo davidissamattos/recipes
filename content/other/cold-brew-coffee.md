@@ -25,4 +25,4 @@ images: []
 
 ## Notas
 
-Eu uso a french press de cold brew da Bodum
+Eu uso a french press de cold brew da Bodum.
