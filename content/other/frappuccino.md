@@ -20,6 +20,7 @@ images: []
 ## Modo de preparo
 
 1. Bate tudo no liquidificador na fun&ccedil;ão gelo, ou pulsando várias vezes
+2. Sirva
 
 ## Notas
 
