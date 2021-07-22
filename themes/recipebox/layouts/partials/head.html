@@ -15,6 +15,12 @@
 
     <!-- CSS for the template -->
     <link href="/css/recipebox.css" rel="stylesheet">
+    <link href="/css/nord.css" rel="stylesheet">
+    {{if .Site.Params.darkTheme}}
+        <link href="/css/recipebox-dark.css" rel="stylesheet">
+    {{else}}
+        <link href="/css/recipebox-light.css" rel="stylesheet">
+    {{end}}
 
 
 </head>

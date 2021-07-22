@@ -19,6 +19,12 @@ instructions = "Modo de preparo"
 ingredients = "Ingredientes"
 notes = "Notas"
 
+
+# darkTheme = false #for light theme
+darkTheme = true #for dark theme
+
+
+
 #Configuring the menu
 # the url field is the name of the folder. Don't forget the /
 #title is the name it will appear in the menu
@@ -29,35 +35,42 @@ notes = "Notas"
     [[menu.main]]
         identifier="salads"
         title="Saladas e molhos"
-        url="/salads"
+        url="/recipes/salads"
         weight=1
     [[menu.main]]
         identifier="bread"
         title="Massas e pães"
-        url="/bread"
+        url="/recipes/bread"
         weight=2
     [[menu.main]]
         identifier="brunch"
         title="Brunch e fika"
-        url="/brunch"
+        url="/recipes/brunch"
         weight=3
     [[menu.main]]
         identifier="roast"
         title="Assados"
-        url="/roast"
+        url="/recipes/roast"
         weight=3
     [[menu.main]]
         title="Asiático"
         identifier="asian"
-        url="/asian"
+        url="/recipes/asian"
         weight=4
     [[menu.main]]
         identifier="dessert"
         title="Sobremesas"
-        url="/dessert"
+        url="/recipes/dessert"
         weight=5
     [[menu.main]]
         identifier="other"
         title="Outras"
-        url="/other"
+        url="/recipes/other"
         weight=6
+    [[menu.main]]
+        identifier="about"
+        title="Sobre"
+        url="/about"
+        weight=7
+        [menu.main.params]
+            hr=true

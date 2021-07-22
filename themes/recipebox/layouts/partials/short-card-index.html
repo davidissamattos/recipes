@@ -1,12 +1,12 @@
 <div class="col-md-4 p-3"> 
-    <div class="card short-card-index">
+    <div class="card short-card-index recipebox-card-bg">
     <a href={{ .Permalink }} class="text-dark">
-        <div class="h5 card-header">
+        <div class="h5 card-header recipebox-card-header-bg">
             {{ .Params.mainCategory}}
         </div>      
         <div class="card-body">
             <h4 class="card-title"> {{ .Params.title }} </h5>
-            <p class="card-text small text-muted">{{.Params.summary}}</p>        
+            <p class="card-text">{{.Params.summary}}</p>        
         </div>
     </a>
     </div>

@@ -1,12 +1,9 @@
 ---
-title: "Homepage new template"
-subtitle: "subtitle"
+title: "Homepage"
 date: "2021"
 ---
-# 
+#
 
-Site ainda em construcao... Criando um template em Hugo com bootstrap 5...
-
-Uma cole&ccedil;ão das receitas que gostamos aqui em casa e que são fáceis de fazer...
+Uma cole&ccedil;ão das receitas que gostamos aqui em casa.
 
 ## Todas as receitas

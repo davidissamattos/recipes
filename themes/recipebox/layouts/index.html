@@ -1,11 +1,13 @@
-
 {{ define "main" }}
 <main>
   <div class="container">
     {{.Content}}
     <div class="row">
       {{ range .Site.RegularPages }}
+        {{if .Params.hideIndex}}
+        {{else}}
         {{ partial "short-card-index.html" .}}
+          {{end}}
       {{ end }}
     </div>
   </div>
