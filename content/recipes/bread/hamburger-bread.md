@@ -4,7 +4,7 @@ date: 2021-07-23T10:38:08+02:00
 preparationTime: "45 min"
 totalTime: "5h min"
 portions: "12 pães"
-mainCategory: "pães"
+mainCategory: "Pães"
 tags: ["hamburger", "batata doce"]
 summary: "Pão de hamburguer a base de batata doce feito em uma tarde"
 hideIndex: false
