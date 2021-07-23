@@ -18,6 +18,11 @@
     color: var(--nord4) !important;
   } 
   
+  .recipebox-hr{
+    color: var(--nord4) !important;
+  }
+
+  
   /* Colors for  backgrounds  */
 
 /* Main background */
@@ -25,9 +30,6 @@
   background-color: var(--nord3) !important;
 }
   
-hr .recipebox-hr{
-  color: var(--nord) !important;
-}
 
 /* Navigation bar and footer */
 .recipebox-navbar-bg{
