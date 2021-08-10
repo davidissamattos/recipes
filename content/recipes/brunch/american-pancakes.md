@@ -1,5 +1,5 @@
 ---
-title: "Panquecas american"
+title: "Panqueca americana"
 date: 2021-07-28T07:16:25+02:00
 preparationTime: "15 min"
 totalTime: "30 min"
