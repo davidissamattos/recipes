@@ -1,0 +1,48 @@
+  /* Colors for main text */
+  /* Colors for main text */
+  h1, .h1, h2, .h2,  h3, .h3,  h4, .h4,  h5, .h5,  h6, .h6, p, a, u, li{
+    color: var(--nord4) !important;
+  }
+
+  .recipebox-card-header{
+    color: var(--nord4) !important;
+  }
+  .recipebox-card-properities{
+    color: var(--nord4) !important;
+  }
+  .recipebox-card-icon {
+    color: var(--nord4) !important;
+    } 
+
+  .recipebox-navbar-icon {
+    color: var(--nord4) !important;
+  } 
+  
+  .recipebox-hr{
+    color: var(--nord4) !important;
+  }
+
+  
+  /* Colors for  backgrounds  */
+
+/* Main background */
+.recipebox-bg{
+  background-color: var(--nord3) !important;
+}
+  
+
+/* Navigation bar and footer */
+.recipebox-navbar-bg{
+  background-color: var(--nord0) !important;
+}
+.recipebox-footer-bg{
+  background-color: var(--nord1) !important;
+}
+
+/* Card */
+.recipebox-card-header-bg{
+  background-color: var(--nord0) !important;
+}
+.recipebox-card-bg{
+  background-color: var(--nord1) !important;
+}
