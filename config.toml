@@ -1,4 +1,4 @@
-baseURL = "https://receitas.mattosdi.com/"
+baseURL = "https://davidissamattos.github.io/recipes/"
 languageCode = "pt-br"
 title = "Receitas David"
 theme = "recipebox"
